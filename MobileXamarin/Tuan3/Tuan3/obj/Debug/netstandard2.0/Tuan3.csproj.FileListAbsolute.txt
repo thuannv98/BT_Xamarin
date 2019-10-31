@@ -1,0 +1,17 @@
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\bin\Debug\netstandard2.0\Tuan3.deps.json
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\bin\Debug\netstandard2.0\Tuan3.dll
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\Tuan3.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\Tuan3.AssemblyInfo.cs
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\bin\Debug\netstandard2.0\ref\Tuan3.dll
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\bin\Debug\netstandard2.0\Tuan3.pdb
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\Tuan3.dll
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\ref\Tuan3.dll
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\Tuan3.pdb
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\ThemLoaiHoa.xaml.g.cs
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\Tuan3.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\LoaihoaPage.xaml.g.cs
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\HoaPage.xaml.g.cs
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\ThemHoa.xaml.g.cs
+C:\Users\PC\source\repos\BaiTapTuan2\Tuan3\Tuan3\obj\Debug\netstandard2.0\XamlC.stamp
