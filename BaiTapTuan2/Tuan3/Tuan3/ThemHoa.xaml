@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tuan3.ThemHoa"
+             Title="Thêm hoa">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="tenhoa" Placeholder="Tên hoa" ReturnType="Next" Keyboard="Text"/>
+            <Editor x:Name="mota" Placeholder="Mô tả" HeightRequest="100" />
+            <Entry x:Name="dongia" Placeholder="Đơn giá" ReturnType="Send" Keyboard="Numeric" />
+            <!--<Button Text="Chọn hình" Clicked="OnPickPhotoButtonClicked" />-->
+
+            <Button Text="Thêm hoa" Clicked="themhoa"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

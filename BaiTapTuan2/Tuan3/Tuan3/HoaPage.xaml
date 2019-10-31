@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tuan3.HoaPage"
+             Title="Danh sách hoa">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Làm mới"
+                     IconImageSource="refresh.png"
+                     Order="Primary"
+                     Priority="0" Clicked="refresh"/>
+        <ToolbarItem IconImageSource="cuc_2.jpg"
+                 Text="Thêm hoa"
+                 Order="Secondary"
+                 Priority="0" Clicked="themhoa"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <ListView x:Name="DSHoa" IsPullToRefreshEnabled="true" RefreshControlColor="Green" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell ImageSource="{Binding Hinh}" Text="{Binding TenHoa}" Detail="{Binding DonGia}">
+                                <ImageCell.ContextActions>
+                                    <MenuItem Clicked="sua" CommandParameter="{Binding .}" Text="Sửa"  IsDestructive="False"/>
+                                    <MenuItem Clicked="xoa" CommandParameter="{Binding .}" Text="Xóa" IsDestructive="False"/>
+                                </ImageCell.ContextActions>
+                                
+                            </ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+
+            <ContentView x:Name="popupSuaHoa" BackgroundColor="#C0808080" Padding="10, 0" IsVisible="false" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <StackLayout Orientation="Vertical" BackgroundColor="Bisque">
+                        <Label Text="Tên hoa: " Margin="10, 10, 0, 0"/>
+                        <Entry x:Name="tenhoamoi" Keyboard="Text" Margin="20, 0"/>
+                        <Label Text="Mô tả: " Margin="10, 10, 0, 0"/>
+                        <Entry x:Name="motamoi" HeightRequest="100" Margin="20, 0"/>
+                        <Label Text="Đơn giá: " Margin="10, 10, 0, 0"/>
+                        <Entry x:Name="dongiamoi" Keyboard="Numeric" Margin="20, 0"/>
+                        <Grid Margin="5, 5">
+                            <Button Text="Sửa" Clicked="xacnhansua" Grid.Row="0" Grid.Column="0"></Button>
+                            <Button Text="Hủy" Clicked="huy" Grid.Row="0" Grid.Column="1"></Button>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </ContentView>
+        </AbsoluteLayout>
+    <!--    <StackLayout>
+            <ListView x:Name="DSHoa">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell ImageSource="{Binding Hinh}" Text="{Binding TenHoa}" Detail="{Binding DonGia}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        -->
+    </ContentPage.Content>
+</ContentPage>

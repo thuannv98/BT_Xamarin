@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tuan3.LoaihoaPage"
+             Title="Danh sách loại hoa">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Làm mới"
+                     IconImageSource="refresh.png"
+                     Order="Primary"
+                     Priority="0" Clicked="refresh"/>
+        <ToolbarItem Text="Thêm loại hoa"
+                     IconImageSource="plus.png"
+                     Order="Secondary"
+                     Priority="0" Clicked="themloaihoa"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <!--<Label Text="Danh sách loại hoa:" TextColor="Green" FontSize="13" HorizontalTextAlignment="Center"/>-->
+            <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <ListView x:Name="DSLoaiHoa" ItemTapped="tapped" IsPullToRefreshEnabled="true" RefreshControlColor="Green" RefreshCommand="{Binding RefreshCommand}"
+               IsRefreshing="{Binding IsRefreshing}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Clicked="sua" CommandParameter="{Binding .}" Text="Sửa"  IsDestructive="False"/>
+                                    <MenuItem Clicked="xoa" CommandParameter="{Binding .}" Text="Xóa" IsDestructive="False"/>
+                                </ViewCell.ContextActions>
+                                <StackLayout Padding="15, 0" VerticalOptions="Center">
+                                    <Label Text="{Binding TenLoai}"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+
+            <ContentView x:Name="popupSuaLoaiHoa" BackgroundColor="#C0808080" Padding="10, 0" IsVisible="false" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <StackLayout Orientation="Vertical" BackgroundColor="Bisque">
+                        <Label Text="Tên loại hoa: " Margin="10, 10, 0, 0"/>
+                        <Entry x:Name="tenloaihoamoi" Margin="20, 10"></Entry>
+                        <Grid Margin="5, 5">
+                            <Button Text="Sửa" Clicked="xacnhansua" Grid.Row="0" Grid.Column="0"></Button>
+                            <Button Text="Hủy" Clicked="huy" Grid.Row="0" Grid.Column="1"></Button>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </ContentView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
