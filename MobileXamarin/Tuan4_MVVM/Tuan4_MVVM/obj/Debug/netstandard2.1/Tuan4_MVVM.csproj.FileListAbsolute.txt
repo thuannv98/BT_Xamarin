@@ -1,0 +1,17 @@
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\bin\Debug\netstandard2.1\Tuan4_MVVM.deps.json
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\bin\Debug\netstandard2.1\Tuan4_MVVM.dll
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\bin\Debug\netstandard2.1\ref\Tuan4_MVVM.dll
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\bin\Debug\netstandard2.1\Tuan4_MVVM.pdb
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\Tuan4_MVVM.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\MainPage.xaml.g.cs
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\View\ChiTietLoaiHoa.xaml.g.cs
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\View\HoaPage.xaml.g.cs
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\View\LoaiHoaPage.xaml.g.cs
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\View\ThemLoaiHoaPage.xaml.g.cs
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\Tuan4_MVVM.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\Tuan4_MVVM.AssemblyInfo.cs
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\XamlC.stamp
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\Tuan4_MVVM.dll
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\ref\Tuan4_MVVM.dll
+C:\Users\PC\source\repos\MobileXamarin\Tuan4_MVVM\Tuan4_MVVM\obj\Debug\netstandard2.1\Tuan4_MVVM.pdb

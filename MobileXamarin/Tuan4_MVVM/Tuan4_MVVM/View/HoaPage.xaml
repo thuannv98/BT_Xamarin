@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tuan4_MVVM.View.HoaPage"
+             Title="{Binding TieuDe}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Tên hoa: " Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" />
+                <Entry Text="{Binding Hoa.TenHoa, Mode=TwoWay}" Placeholder="Tên hoa" Grid.Row="0" Grid.Column="1" VerticalOptions="Center"/>
+                <Label Text="Mô tả: " Grid.Row="1" Grid.Column="0" VerticalOptions="Center" />
+                <Editor Text="{Binding Hoa.MoTa, Mode=TwoWay}" Placeholder="Mô tả" HeightRequest="100" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" />
+                <Label Text="Đơn giá: " Grid.Row="2" Grid.Column="0" VerticalOptions="Center" />
+                <Entry Text="{Binding Hoa.DonGia, Mode=TwoWay}" Placeholder="Đơn giá" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" />
+                <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="2">
+                    <Button x:Name="buttonThemhoa" Text="Thêm hoa" Command="{Binding ThemHoa}" />
+                    <Button x:Name="buttonCapnhathoa" Text="Cập nhật hoa" Command="{Binding CapNhatHoa}" />
+                    <Button x:Name="buttonXoahoa" Text="Xóa hoa" Command="{Binding XoaHoa}" />
+                </StackLayout>
+            </Grid>
+            <ListView ItemsSource="{Binding HoaItem}" SelectedItem="{Binding Hoa, Mode=TwoWay}" Header="Danh sách hoa">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell ImageSource="{Binding Hinh}" Text="{Binding TenHoa}" Detail="{Binding MaLoai}" TextColor="ForestGreen" DetailColor="DeepSkyBlue"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tuan4_MVVM.View.LoaiHoaPage"
+             Title="Loại Hoa">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Tên loại hoa: " Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center"/>
+            <Entry x:Name="entryTenloaihoa" Placeholder="Tên loại hoa" Text="{Binding LoaiHoa.TenLoai, Mode=TwoWay}" Grid.Row="0" Grid.Column="1" VerticalOptions="Center"/>
+            <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="2">
+                <Button x:Name="buttonThemloaihoa" Text="Thêm" Command="{Binding ThemLoaiHoa}" WidthRequest="60" Padding="2,2"/>
+                <Button x:Name="buttonCapnhatloaihoa" Text="Sửa" Command="{Binding SuaLoaiHoa}" WidthRequest="60" Padding="2,2" />
+                <Button x:Name="buttonXoaloaihoa" Text="Xóa" Command="{Binding XoaLoaiHoa}" WidthRequest="60" Padding="2,2" />
+                <Button x:Name="buttonXemdanhsachhoa" Text="Xem danh sách hoa" Command="{Binding ShowDsHoa}" Padding="8,8" />
+            </StackLayout>
+            
+            <ListView ItemsSource="{Binding LoaiHoaItem}" CachingStrategy="RecycleElement" 
+                      SelectedItem="{Binding LoaiHoa, Mode=TwoWay}" Grid.Row="2" Grid.ColumnSpan="2" Header="Danh sách loại hoa">
+                <!--<ListView.Behaviors>
+                    <behaviors:EventToCommandBehavior EventName="ItemTapped" Command="{Binding OrderDetailCommand}" EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}" />
+                </ListView.Behaviors>-->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding MaLoai, Mode=TwoWay}" Detail="{Binding TenLoai, Mode=TwoWay}" TextColor="YellowGreen" DetailColor="BlueViolet"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>
